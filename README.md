@@ -39,4 +39,10 @@ npm test         # run the scoring and diff tests
 npm run build    # production build in dist/
 ```
 
+## Deploying to Vercel
+
+Import the repo in Vercel; it detects Vite automatically, so no settings are needed.
+
+The build adds the canonical URL, social-share image tags, `sitemap.xml` and structured data using the production domain Vercel provides. If you use a custom domain, add an environment variable `SITE_URL` (for example `https://rote.app`) so those point at it instead.
+
 Built with Vite, React, TypeScript, Tailwind CSS, Motion, jsdiff, Zustand and Lucide icons.
